@@ -1,0 +1,46 @@
+.card {
+  background-image: asset-url('white_russian.jpg');
+  background-size: cover;
+  height: 300px;
+  border-radius: 5px;
+  transition: all 0.8s ease;
+  position: relative;
+  // top: 0;
+  &:hover {
+    margin-top: -10px;
+  }
+  .card-name {
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.8s ease;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.container-show {
+  display: flex;
+  justify-content: center;
+}
+
+.card-show {
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%), url('https://i.pinimg.com/originals/af/d2/4c/afd24c5047e6aaa1cfbe4dd8e8d7468f.jpg');
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+  margin: 0;
+  border-radius: 10px;
+  .card-cocktail-show {
+    height: 80%;
+  }
+  .dose-control {
+    text-align: center;
+  }
+}

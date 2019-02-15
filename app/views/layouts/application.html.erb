@@ -10,31 +10,22 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 50%), url('https://images.unsplash.com/photo-1531387367216-681093c0279b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2816&q=80');background-size:cover;">
     <div class="navbar-wagon">
       <!-- Logo -->
-      <a href="/" class="navbar-wagon-brand">
-        <img src="images/icon.jpg" alt="logo">
+      <div class='title'>
+      <a href="/cocktails" class="navbar-wagon-brand">
+        <%= image_tag "icon.png", alt: "Icon", height: 200 %>
       </a>
+      <h2>Mister Cocktail</h2>
+      </div>
 
       <!-- Right Navigation -->
       <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
+        <%= link_to 'New cocktail', new_cocktail_path %>
 
         <!-- Profile picture with dropdown list -->
-        <div class="navbar-wagon-item">
-          <div class="dropdown">
-            <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-            <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Log Out</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
 
       <!-- Dropdown appearing on mobile only -->

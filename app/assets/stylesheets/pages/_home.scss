@@ -1,6 +1,66 @@
 // Specific CSS for your home-page
 
-body {
-  background-image: asset-url('home.jpeg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background-size: cover;
+// body {
+//   background-image: asset-url('home.jpeg'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+//   background-size: cover;
+// }
+
+.wrapper {
+  width: 100vw;
+  text-align: center;
+}
+
+.container {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  h3 {
+    margin-bottom: 50px;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  h2 {
+    margin: 0;
+    margin-left: 20px;
+    color: white;
+  }
+}
+
+.navbar-wagon {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.8s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.navbar-wagon-brand {
+  background-image: asset-url('icon.jpg');
+}
+
+.cocktail-list {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: white;
+        transition: all 0.8s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
 }
