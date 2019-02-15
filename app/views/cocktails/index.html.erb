@@ -5,10 +5,11 @@
       <div class="row">
         <ul>
           <% @cocktails.each do |cocktail| %>
-          <div class="col-xs-3">
-            <div class="card">
+          <div class="col-xs-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo, height: 200, width: 300, crop: :fill %>')">
+              <%= link_to '', cocktail_path(cocktail) %>
               <div class="card-name">
-                <%= link_to "#{cocktail.name}", cocktail_path(cocktail) %>
+                <h4><%= cocktail.name %></h4>
               </div>
               <div class="card-info">
               </div>
